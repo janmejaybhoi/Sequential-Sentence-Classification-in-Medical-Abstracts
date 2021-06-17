@@ -48,7 +48,7 @@ tribrid_pos_char_token_embed	84.800741	0.849911	0.848007	0.844585
 ## Results
 ![Results](https://github.com/janmejaybhoi/Sequential-Sentence-Classification-in-Medical-Abstracts/blob/main/img/Model_scores.JPG)
 |Model                        |accuracy   |precision |  recall  |  f1     |
-|----------------- -----------| --------  | :------: | :------: | ------: |
+|----------------------------| --------  | :------: | :------: | ------: |
 |baseline                     | 0.721832  | 0.718647 | 0.721832 | 0.698925|
 |custom_token_embed_conv1d    | 0.808288  | 0.804780 | 0.808288 | 0.805473|
 |pretrained_token_embed       | 0.751059  | 0.745737 | 0.751059 | 0.746384|
