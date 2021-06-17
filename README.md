@@ -18,9 +18,13 @@ In other words, given the abstract of a RCT, what role does each sentence serve 
 3. *Its a Many to One Text Classification problem. Where we categorize a sequence to a prticular class.*
 
 
-## Dataset
+## Resources
 
-[*PubMed 200k RCT: a Dataset for Sequential Sentence Classification in Medical Abstracts*](https://arxiv.org/abs/1710.06071)
+> 📖 Before going through the code in this notebook, you might want to get a background of what we're going to be doing. To do so, spend an hour (or two) going through the following papers and then return to this notebook:
+1. Where our data is coming from: [*PubMed 200k RCT: a Dataset for Sequential Sentence Classification in Medical Abstracts*](https://arxiv.org/abs/1710.06071)
+2. Where our model is coming from: [*Neural networks for joint sentence
+classification in medical paper abstracts*](https://arxiv.org/pdf/1612.05251.pdf).
+3. You can grab the data from Author's github repo also.([PubMed RCT200k from GitHub](https://github.com/Franck-Dernoncourt/pubmed-rct))
 
   
 ## Models
@@ -49,7 +53,11 @@ There are some things to note about this difference:
 * Our models (with an exception for the baseline) have been trained on ~18,000 (10% of batches) samples of sequences and labels rather than the full ~180,000 in the 20k RCT dataset.
   * This is often the case in machine learning experiments though, make sure training works on a smaller number of samples, then upscale when needed (an extension to this project will be training a model on the full dataset).
 
+### Ploting Metrics:
 ![Results](https://github.com/janmejaybhoi/Sequential-Sentence-Classification-in-Medical-Abstracts/blob/main/img/Model_scores.JPG)
+
+The table shows the **Metrics** of all the model:
+
 |Model                        |accuracy   |precision |  recall  |  f1     |
 |----------------------------| --------  | :------: | :------: | ------: |
 |baseline                     | 0.721832  | 0.718647 | 0.721832 | 0.698925|
